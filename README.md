@@ -33,33 +33,16 @@ The objective is to simulate a production-style analytics system from database t
 - Matplotlib & Seaborn
 - Streamlit
 
-📁 Project Structure
-ecommerce-product-analytics-system/
-│
-├── dashboards/
-|    
-├── data/
-│   └── ecommerce_data.csv
-│
-├── notebooks/
-│   ├── analytics.ipynb
-│   ├── app.ipynb
-│   ├── forecast.ipynb
-│   ├── load_to_mysql.ipynb
-│
-├── src/
-|   ├── app.py
-|
-├── requirements.txt
-└── README.md
-
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
-git clone <your-repo-link>
-cd ecommerce-product-analytics-system
+
+  - git clone <your-repo-link>
+
+  - cd ecommerce-product-analytics-system
 
 2️⃣ Install Dependencies
-pip install -r requirements.txt
+
+  - pip install -r requirements.txt
 
 3️⃣ Create MySQL Database
 
