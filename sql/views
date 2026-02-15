@@ -1,0 +1,25 @@
+CREATE VIEW revenue_summary AS
+SELECT 
+    DATE_FORMAT(order_date, '%Y-%m-01') AS month,
+    SUM(quantity * price) AS revenue
+FROM orders
+GROUP BY month;
+
+
+CREATE VIEW product_performance AS
+SELECT
+    stockcode,
+    SUM(quantity) AS total_quantity,
+    SUM(quantity * price) AS total_revenue
+FROM online_retail
+GROUP BY stockcode
+ORDER BY total_revenue DESC;
+
+CREATE VIEW customer_rfm AS
+SELECT
+    customer_id,
+    DATEDIFF(MAX(invoicedate), MIN(invoicedate)) AS recency,
+    COUNT(DISTINCT invoice) AS frequency,
+    SUM(quantity * price) AS monetary
+FROM online_retail
+GROUP BY customer_id;
