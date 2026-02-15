@@ -193,3 +193,6 @@ Add automated ETL pipeline
 👤 About
 
 I enjoy identifying patterns in data and translating them into structured, actionable insights. This project reflects my interest in building scalable analytics systems that bridge data engineering and machine learning.
+
+Note: Full dataset (~43MB) excluded to keep repository lightweight.
+A sample dataset is provided for demonstration.
